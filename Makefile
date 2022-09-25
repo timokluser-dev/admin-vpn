@@ -21,7 +21,7 @@ generate-client:
 
 # CLIENT_NAME="client" make get-client
 get-client:
-	docker-compose run --rm openvpn ovpn_getclient ${CLIENT_NAME} > "${CLIENT_NAME}.ovpn"
+	docker-compose run --rm openvpn ovpn_getclient ${CLIENT_NAME} > "admin-vpn_${CLIENT_NAME}.ovpn"
 
 # CLIENT_NAME="client" make revoke-client
 revoke-client:
