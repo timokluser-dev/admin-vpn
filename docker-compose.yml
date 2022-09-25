@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  openvpn:
+    image: docker.io/kylemanna/openvpn:2.4
+    volumes:
+      - openvpn-data:/etc/openvpn
+    ports:
+      - "1194:1194/udp"
+    networks:
+      - public
+    cap_add:
+      - NET_ADMIN
+    hostname: openvpn
+    restart: always
+
+volumes:
+  openvpn-data:
+
+networks:
+  public:
+    internal: false
