@@ -1,4 +1,6 @@
-# admin-vpn
+# admin-vpn - **deprecated**
+
+> ℹ️ this repository has moved to [timokluser-dev/infrastructure](https://github.com/timokluser-dev/infrastructure)
 
 basic openvpn setup for administration of ip protected resources
 
